@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #ttttt{
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="" id=""></div>
+    <script>
+            student = [
+        {
+            "Name": "Name 1",
+            "Mobileno": 80,
+            "Email": "Email 1",
+            "Branch": "Branch 1",
+            "EnrollmentNo": "EnrollmentNo 1",
+            "id": "1"
+        },
+        {
+            "Name": "Name 2",
+            "Mobileno": 24,
+            "Email": "Email 2",
+            "Branch": "Branch 2",
+            "EnrollmentNo": "EnrollmentNo 2",
+            "id": "2"
+        },
+        {
+            "Name": "Name 3",
+            "Mobileno": 85,
+            "Email": "Email 3",
+            "Branch": "Branch 3",
+            "EnrollmentNo": "EnrollmentNo 3",
+            "id": "3"
+        },
+        {
+            "Name": "Name 4",
+            "Mobileno": 69,
+            "Email": "Email 4",
+            "Branch": "Branch 4",
+            "EnrollmentNo": "EnrollmentNo 4",
+            "id": "4"
+        },
+        {
+            "Name": "Name 5",
+            "Mobileno": 31,
+            "Email": "Email 5",
+            "Branch": "Branch 5",
+            "EnrollmentNo": "EnrollmentNo 5",
+            "id": "5"
+        },
+        {
+            "Name": "Name 6",
+            "Mobileno": 61,
+            "Email": "Email 6",
+            "Branch": "Branch 6",
+            "EnrollmentNo": "EnrollmentNo 6",
+            "id": "6"
+        },
+        {
+            "Name": "Name 7",
+            "Mobileno": 75,
+            "Email": "Email 7",
+            "Branch": "Branch 7",
+            "EnrollmentNo": "EnrollmentNo 7",
+            "id": "7"
+        },
+        {
+            "Name": "Name 8",
+            "Mobileno": 50,
+            "Email": "Email 8",
+            "Branch": "Branch 8",
+            "EnrollmentNo": "EnrollmentNo 8",
+            "id": "8"
+        }
+        ]
+
+            document.write("<table border=1 cellspacing=0 cellpadding=4 id='ttttt'>");
+          
+            document.write("<tr>");
+            document.write("<td>" + "Id" + "</td>");
+            document.write("<td>" + "Name" + "</td>");
+            document.write("<td>" + "Mobileno" + "</td>");
+            document.write("<td>" + "Email" + "</td>");
+            document.write("<td>" + "Branch" + "</td>");
+            document.write("<td>" + "EnrollmentNo" + "</td>");
+            document.write("<tr/>");
+        for(let i=0;i<student.length;i++){
+            document.write("<tr>");
+            document.write("<td>" + student[i].id + "</td>");
+            document.write("<td>" + student[i].Name + "</td>");
+            document.write("<td>" + student[i].Mobileno + "</td>");
+            document.write("<td>" + student[i].Email + "</td>");
+            document.write("<td>" + student[i].Branch + "</td>");
+            document.write("<td>" + student[i].EnrollmentNo + "</td>");
+            document.write("<tr/");
+        }
+        document.write("<table/>");
+
+ 
+    </script>
+</body>
+</html>

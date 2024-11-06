@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #absentNo{
+            position: fixed;
+            top: 40%;
+            left: 30%;
+            background-color: rgb(76, 171, 208);
+        }
+    </style>
+</head>
+<body>
+    <button onclick="allAbsent()">All absent</button>
+    <button onclick="allPresent()">All present</button>
+    <div id="student">
+
+    </div>
+    <div id="absentNo">
+        Hellooo
+    </div>
+    <script>
+        stu = document.getElementById('student').innerHTML
+        for(let i=1;i<=100;i++){
+            stu+=document.write("<input type='checkbox' value = '"+i+"' onclick = 'updateabs()'>" + i + "<br/>");
+        }
+
+        function allAbsent(){
+            console.log(5)
+            let allchecks = document.getElementById('input');
+            for(let i=0;i<=allchecks.length;i++){
+                allchecks[i].checked = " ";
+            }
+            updateabs();
+        }
+        function allPresent(){
+            let allchecks = document.getElementById('input');
+            for(let i=0;i<allchecks.length;i++){
+                allchecks[i].checked = 'checked';
+            }
+            updateabs();
+        }
+        function updateabs(){
+            let allchecks = document.getElementById('input');
+            absNo =[];
+            for(let i=0;i<allchecks.length;i++){
+                if(abs[i].checked == ""){
+                    absNo.push(allchecks[i].value);
+                }
+            }
+            document.getElementById('absentNo').innerHTML = absNo;
+        }
+    </script>
+</body>
+</html>

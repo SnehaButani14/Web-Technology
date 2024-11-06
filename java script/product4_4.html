@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        product = [
+                    {
+                        "Name": "Mouse",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1013.jpg",
+                        "guarantee": 79,
+                        "warnty": 14,
+                        "id": "1"
+                    },
+                    {
+                        "Name": "Pizza",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1129.jpg",
+                        "guarantee": 64,
+                        "warnty": 4,
+                        "id": "2"
+                    },
+                    {
+                        "Name": "Tuna",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/677.jpg",
+                        "guarantee": 3,
+                        "warnty": 85,
+                        "id": "3"
+                    },
+                    {
+                        "Name": "Shirt",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/24.jpg",
+                        "guarantee": 80,
+                        "warnty": 17,
+                        "id": "4"
+                    },
+                    {
+                        "Name": "Shoes",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/284.jpg",
+                        "guarantee": 99,
+                        "warnty": 51,
+                        "id": "5"
+                    },
+                    {
+                        "Name": "Fish",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/323.jpg",
+                        "guarantee": 48,
+                        "warnty": 15,
+                        "id": "6"
+                    },
+                    {
+                        "Name": "Bacon",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/282.jpg",
+                        "guarantee": 25,
+                        "warnty": 36,
+                        "id": "7"
+                    },
+                    {
+                        "Name": "Pizza",
+                        "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/238.jpg",
+                        "guarantee": 25,
+                        "warnty": 46,
+                        "id": "8"
+                    }
+                    ]
+            
+                document.write("<table border=1 cellspacing=    0>");
+                    for(let i=0;i<product.length;i++){
+                        document.write("<tr>");
+                        document.write("<td>" + product[i].id + "<td/>");  
+                        document.write("<td>" + product[i].Name + "<td/>");                          
+                        document.write("<td>" + "<img src=" + product[i].avatar + ">" + "<td/>");                            
+                        document.write("<td>" + product[i].guarantee + "<td/>");                            
+                        document.write("<td>" + product[i].warnty + "<td/>");                            
+                        document.write("<tr/>");
+                    }
+                    document.write("<table/>");
+
+    </script>
+</body>
+</html>

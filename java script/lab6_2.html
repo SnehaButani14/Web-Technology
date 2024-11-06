@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  style="background-color: pink; height: 150px; width: 150px;" id="color"></div>
+    <br/>
+    <button ondblclick="changecolor()" style="height: 30px; width: 100px;">double click</button>
+    <br/>
+    <button onmousedown="changecolor()" style="height: 30px; width: 100px;">mousedown</button>
+    <br/>
+    <button onmousemove="changecolor()" style="height: 30px; width: 100px;">mousemove</button>
+    <br/>
+    <button onmouseover="changecolor()" style="height: 30px; width: 100px;">mouseover</button>
+    <br/>
+    <button onmouseout="changecolor()" style="height: 30px; width: 100px;">mouseout</button>
+    <br/>
+    <button onmouseup="changecolor()" style="height: 30px; width: 100px;">mouseup</button>
+
+    <script>
+        function changecolor(){
+            document.getElementById('color').style.backgroundColor="skyblue"
+        }
+    </script>
+</body>
+</html>

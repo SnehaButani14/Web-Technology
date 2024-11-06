@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// Define a class named Person
+class Person {
+  // Constructor method to initialize the object
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  // Method to get the person's details
+  getDetails() {
+    return `Name: ${this.name}, Age: ${this.age}`;
+  }
+
+  // Method to celebrate the birthday and increment age
+  celebrateBirthday() {
+    this.age += 1;
+    return `Happy Birthday, ${this.name}! You are now ${this.age} years old.`;
+  }
+}
+
+// Creating an instance of the Person class
+const person1 = new Person('Sneha', 17);
+
+// Accessing the methods of the Person class
+console.log(person1.getDetails()); // Output: Name: Sneha, Age: 17
+console.log(person1.celebrateBirthday()); // Output: Happy Birthday, Sneha! You are now 18 years old.
+console.log(person1.getDetails()); // Output: Name: Sneha, Age: 18
+</script>
+</body>
+</html>

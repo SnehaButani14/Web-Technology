@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #table{
+            height: auto;
+            width: auto;
+           
+        }
+        #input{
+            width: 310px;
+            height: 80px;
+            margin: 3px;
+            background-color: rgb(173, 168, 168);
+            border: 0;
+            border-radius: 5px;
+            font-size:xx-large;
+            padding: 1px;
+        }
+        #button{
+            height: 50px;
+            width: 70px;
+            margin: 2px;
+            background-color: black;
+            color: antiquewhite;
+            border: 0;
+            border-radius: 5px;
+        }
+        #button1{
+            border: 0;
+            color: antiquewhite;
+            background-color:black;
+            margin: 4px;
+            width: 50px;
+            border-radius: 2px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset style="width:310px;">
+    <table id="table" cellspacing=0>
+        <tr>
+            <td colspan="4">
+            <input  id="input" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+            <button id="button1" onclick="clr()" >CE</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="add(value)" value="7" id="button">7</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="8"  id="button">8</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="9" id="button">9</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="/" id="button">/</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="add(value)" value="4" id="button">4</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="5" id="button">5</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="6" id="button">6</button>
+            </td>
+            <td>
+                <button onclick="add(value)"  value="*" id="button">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="add(value)" value="1" id="button">1</button>
+            </td>
+            <td>
+                <button onclick="add(value)"  value="2" id="button">2</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="3" id="button">3</button>
+            </td>
+            <td>
+                <button onclick="add(value)"  value="-" id="button">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="add(value)"  value="0" id="button">0</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="." id="button">.</button>
+            </td>
+            <td>
+                <button onclick="add(value)" value="+"  id="button">+</button>
+            </td>
+            <td>
+                <button onclick="Evaluate()" value="=" id="button">=</button>
+            </td>
+        </tr>
+    </table>
+</fieldset>
+<script>
+    var ans = document.getElementById("input");
+    function print(){
+        console.log(ans.value);
+    }
+    function add(value){
+        ans.value+=value;
+    }
+    function Evaluate(){
+        var final = eval(ans.value);
+        ans.value=final;
+    }
+    function clr(){
+        ans.value = "";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	   <fieldset style="width: 50%;">
+       <form align="center">
+		<h1>Login info</h1>
+       	<table  align="center">
+       	<div>
+       	    <lable>Name</lable>    		
+       	     <input id="name" type="text" name="">    	    	
+			</div>
+			<br/>
+			<div>
+				<lable>Password</lable>    		
+				 <input id="password" type="password" name="">    	    	
+			 </div>
+			 <br/>
+			 <div>
+				<lable>Repeat password</lable>    		
+				 <input id="password1" type="password" name="">    	    	
+			 </div>
+			 <br/>
+			 <div>
+			 <lable>Email</lable>    		
+			 <input id="email" type="email" name="">    	    	
+		 	</div>
+			<br/>
+			 <div>
+				<lable>Date of birth</lable>    		
+				 <input id="dateofbirth" type="date" name="UserName">    	    	
+			 </div>
+			 <br/>
+			 <div>
+				<lable>Enrollment no</lable>    		
+				 <input id="enrollmentno" type="text" name="UserName">    	    	
+			 </div>
+			 <br/>
+       	    <div>
+				<button onclick="valid()">log in</button>
+			</div>
+       	     	    	
+       	  </table>   	    	
+       </form>
+       </fieldset>
+	   <script>
+			let user = document.getElementById('username').value;
+			let pass = document.getElementById('password').value;
+			let pass1 = document.getElementById('password1').value;
+			let ema = document.getElementById('email').value;
+			let dob = document.getElementById('dateofbirth').value;
+			let enroll = document.getElementById('enrollmentno').value;
+		
+			function valid(){
+				if(user.length<8){
+					alert()
+				}
+			}
+	   </script>
+</body>
+</html>_

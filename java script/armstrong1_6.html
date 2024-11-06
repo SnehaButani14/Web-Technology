@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = Number(prompt("Enter Number : "));
+        console.log(n);
+        var temp;
+        var sum=0;
+        n=temp;
+        
+        while(n>0){
+            r=n%10;    
+            sum=sum+(r*r*r);    
+            n=n/10;   
+        }
+        if(temp==sum){
+            console.log("armstrong no");
+        }
+        else{
+            console.log("does not armstrong no");
+        }
+        
+    </script>
+</body>
+</html>

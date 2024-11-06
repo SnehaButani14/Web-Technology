@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Enter a number"));
+        console.log(a);
+        var b = Number(prompt("Enter second number"));
+        console.log(b);
+        var c = String(prompt("Enter symbol"));
+        if(c == "+"||"-"||"*"||"/"){
+        if(c == "+"){
+            console.log(a+b);
+        }
+        else if(c == "-"){
+            console.log(a-b);
+        }
+        else if(c == "*"){
+            console.log(a*b);
+        }
+        else if(c == "/"){
+            console.log(a/b);
+            if(a==0){
+                console.log("No is invalid");
+            }
+        }
+    }
+    else{
+        console.log("Invalid symbol");
+    }
+    </script>
+</body>
+</html>

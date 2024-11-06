@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #table{
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        const faculty = [
+        
+  {
+    "Name": "Name 1",
+    "Mobileno": 69,
+    "Email": "Email 1",
+    "Branch": "Branch 1",
+    "id": "1"
+  },
+  {
+    "Name": "Name 2",
+    "Mobileno": 9,
+    "Email": "Email 2",
+    "Branch": "Branch 2",
+    "id": "2"
+  },
+  {
+    "Name": "Name 3",
+    "Mobileno": 63,
+    "Email": "Email 3",
+    "Branch": "Branch 3",
+    "id": "3"
+  },
+  {
+    "Name": "Name 4",
+    "Mobileno": 90,
+    "Email": "Email 4",
+    "Branch": "Branch 4",
+    "id": "4"
+  },
+  {
+    "Name": "Name 5",
+    "Mobileno": 59,
+    "Email": "Email 5",
+    "Branch": "Branch 5",
+    "id": "5"
+  },
+  {
+    "Name": "Name 6",
+    "Mobileno": 65,
+    "Email": "Email 6",
+    "Branch": "Branch 6",
+    "id": "6"
+  },
+  {
+    "Name": "Name 7",
+    "Mobileno": 6,
+    "Email": "Email 7",
+    "Branch": "Branch 7",
+    "id": "7"
+  },
+  {
+    "Name": "Name 8",
+    "Mobileno": 97,
+    "Email": "Email 8",
+    "Branch": "Branch 8",
+    "id": "8"
+  }
+];
+
+        console.log(faculty);
+        document.write("<table id = 'table' border=1 cellspacing=0>");
+            document.write("<tr>");
+                document.write("<td>" + "id" + "</td>");
+                document.write("<td>" + "Name" + "</td>");
+                document.write("<td>" + "Mobileno" + "</td>");
+                document.write("<td>" + "Email" + "</td>");
+                document.write("<td>" + "Branch" + "</td>");
+                document.write("<tr/>");
+            for(let i=0;i<=faculty.length;i++){
+                document.write("<tr>");
+                document.write("<td>" + faculty[i].id+ "</td>");
+                document.write("<td>" + faculty[i].Name + "</td>");
+                document.write("<td>" + faculty[i].Mobileno + "</td>");
+                document.write("<td>" + faculty[i].Email+ "</td>");
+                document.write("<td>" + faculty[i].Branch+ "</td>");
+                document.write("<tr/>");
+            }
+        document.write("<table/>");
+
+    </script>
+</body>
+</html>

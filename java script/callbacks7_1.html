@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function addition(x,y){
+            sum = x + y;
+            display(sum);
+        }
+        function subtraction(x,y){
+            diff = x-y;
+            display(diff);
+        }
+        function display(a){
+            document.write("The value is:"+a);
+        }
+        function operate(callback){
+            n1 = Number(prompt("Enter first number:"));
+            n2 = Number(prompt("Enter second number:"));
+            callback(n1,n2);
+        }
+        operate (addition);
+        operate (subtraction);
+    </script>
+</body>
+</html>

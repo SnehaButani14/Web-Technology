@@ -1,0 +1,18 @@
+    <input type="text" id="txt">
+    <button onabort="changecolor()" style="height: 30px; width: 100px;">abort</button>
+    <br/>
+    <button onmousedown="changecolor()" style="height: 30px; width: 100px;">mousedown</button>
+    <br/>
+    <button onmousemove="changecolor()" style="height: 30px; width: 100px;">mousemove</button>
+    <br/>
+    <button onmouseover="changecolor()" style="height: 30px; width: 100px;">mouseover</button>
+    <br/>
+    <button onmouseout="changecolor()" style="height: 30px; width: 100px;">mouseout</button>
+    <br/>
+    <button onmouseup="changecolor()" style="height: 30px; width: 100px;">mouseup</button>
+
+    <script>
+        function changecolor(){
+            document.getElementById('txt').style.backgroundColor="skyblue"
+        }
+    </script>
